@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.os.Handler;
 import android.os.Bundle;
 
-import com.example.splashscreen.ui.login.Login;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         h.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent in = new Intent(MainActivity.this, Login.class);
+                Intent in = new Intent(MainActivity.this,Login.class);
                 startActivity(in);
             }
         },1000);
