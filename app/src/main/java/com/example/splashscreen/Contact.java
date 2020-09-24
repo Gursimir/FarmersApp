@@ -5,11 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.TextView;
 
 public class Contact extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +21,28 @@ public class Contact extends AppCompatActivity {
         setContentView(R.layout.activity_contact);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        TextView textView = findViewById(R.id.textView);
+        TextView textView1 = findViewById(R.id.textView2);
+
+
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent1 = new Intent(Intent.ACTION_SENDTO);
+                intent1.setData(Uri.parse("simkaur3011@outlook.com"));
+                startActivity(intent1);
+            }
+        });
+
+        textView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_CALL);
+                intent.setData(Uri.parse("7780931822"));
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -53,4 +79,5 @@ public class Contact extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
 }
