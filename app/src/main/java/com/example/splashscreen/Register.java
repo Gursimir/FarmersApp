@@ -21,7 +21,7 @@ public class Register extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent in= new Intent(Register.this,Home.class);
+                Intent in= new Intent(Register.this, Home.class);
                 startActivity(in);
             }
         });
