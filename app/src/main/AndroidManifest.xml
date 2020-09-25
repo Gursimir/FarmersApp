@@ -13,13 +13,17 @@
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
 
-        <activity android:name=".Contact"/>
+        <activity
+            android:name=".Contact"
+            android:label="Contact Us"/>
 
-        <activity android:name=".About" />
+        <activity
+            android:name=".About"
+            android:label="About Us"/>
 
         <activity
             android:name=".Home"
-            android:label="@string/title_activity_home2"
+            android:label="Home"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Login">
             <intent-filter>
@@ -29,6 +33,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Register" />
+        
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

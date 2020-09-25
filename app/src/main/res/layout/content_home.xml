@@ -7,115 +7,73 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     android:background="@drawable/bghome">
 
-    <LinearLayout
-        android:id="@+id/layout"
+    <ImageView
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="130dp"
-        android:layout_marginRight="130dp"
-        android:orientation="vertical"
+        android:layout_marginEnd="150dp"
+        android:layout_marginRight="150dp"
+        android:src="@drawable/applogo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/logoweight"
-            tools:ignore="ContentDescription" />
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       android:layout_marginTop="350sp">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/logofarmer"
-            tools:ignore="ContentDescription" />
-    </LinearLayout>
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
 
-    <LinearLayout
-        android:id="@+id/layout2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="@+id/layout"
-        app:layout_constraintStart_toStartOf="@+id/layout"
-        app:layout_constraintTop_toBottomOf="@+id/layout">
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/buy"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="From Soil To Market"
-            android:textColor="#ffff"
-            android:textSize="15sp"
-            tools:ignore="HardcodedText" />
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/button"
+               android:text="Buy"
+               android:textColor="#425846"
+               android:textSize="30sp"
+               android:layout_marginTop="15sp"
+               android:layout_marginStart="20sp"
+               android:layout_marginLeft="20sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Technology For next Agi Revolution"
-            android:textColor="#ffff"
-            android:textSize="12sp"
-            tools:ignore="HardcodedText" />
-    </LinearLayout>
+       </LinearLayout>
 
-    <RelativeLayout
-        android:id="@+id/relativelayout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginRight="100dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layout2">
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/buy"
-            tools:ignore="ContentDescription" />
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/sell"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Buy"
-            android:textColor="#789F6F"
-            android:textSize="25sp"
-            android:layout_marginTop="100dp"
-            android:layout_marginLeft="250dp"
-            android:layout_marginStart="250dp"
-            tools:ignore="HardcodedText" />
+           <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:background="@drawable/button"
+               android:text="Sell"
+               android:textColor="#425846"
+               android:textSize="30sp"
+               android:layout_marginTop="15sp"
+               android:layout_marginStart="20sp"
+               android:layout_marginLeft="20sp" />
 
-    </RelativeLayout>
+       </LinearLayout>
 
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="80dp"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/relativelayout">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="65dp"
-            android:text="Sell"
-            android:textColor="#789F6F"
-            android:textSize="25sp"
-            tools:ignore="HardcodedText" />
-
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
-            android:src="@drawable/sell"
-            tools:ignore="ContentDescription"
-            android:layout_marginStart="100dp" />
-
-    </RelativeLayout>
+   </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
