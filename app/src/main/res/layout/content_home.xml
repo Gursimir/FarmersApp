@@ -16,7 +16,8 @@
         android:src="@drawable/applogo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
 
    <LinearLayout
        android:layout_width="wrap_content"
@@ -36,10 +37,11 @@
            <ImageView
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:src="@drawable/buy"/>
+               android:src="@drawable/buy"
+               tools:ignore="ContentDescription" />
 
            <Button
-               android:layout_width="wrap_content"
+               android:layout_width="200sp"
                android:layout_height="wrap_content"
                android:background="@drawable/button"
                android:text="Buy"
@@ -47,7 +49,8 @@
                android:textSize="30sp"
                android:layout_marginTop="15sp"
                android:layout_marginStart="20sp"
-               android:layout_marginLeft="20sp" />
+               android:layout_marginLeft="20sp"
+               tools:ignore="HardcodedText" />
 
        </LinearLayout>
 
@@ -59,10 +62,11 @@
            <ImageView
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:src="@drawable/sell"/>
+               android:src="@drawable/sell"
+               tools:ignore="ContentDescription" />
 
            <Button
-               android:layout_width="wrap_content"
+               android:layout_width="200sp"
                android:layout_height="wrap_content"
                android:background="@drawable/button"
                android:text="Sell"
@@ -70,7 +74,8 @@
                android:textSize="30sp"
                android:layout_marginTop="15sp"
                android:layout_marginStart="20sp"
-               android:layout_marginLeft="20sp" />
+               android:layout_marginLeft="20sp"
+               tools:ignore="HardcodedText" />
 
        </LinearLayout>
 

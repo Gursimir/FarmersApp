@@ -10,10 +10,11 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.Button;
 
 public class Contact extends AppCompatActivity {
 
+    Button button1 , button2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,20 +23,10 @@ public class Contact extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        TextView textView = findViewById(R.id.textView);
-        TextView textView1 = findViewById(R.id.textView2);
+        button1 = findViewById(R.id.button_first);
+        button2 = findViewById(R.id.button_second);
 
-
-        textView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent1 = new Intent(Intent.ACTION_SENDTO);
-                intent1.setData(Uri.parse("simkaur3011@outlook.com"));
-                startActivity(intent1);
-            }
-        });
-
-        textView1.setOnClickListener(new View.OnClickListener() {
+        button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_CALL);
