@@ -1,44 +1,22 @@
 package com.example.splashscreen;
 
-import android.content.Intent;
-import android.os.Bundle;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
-public class Home extends AppCompatActivity {
+public class Sell extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_sell);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        Button button1 = findViewById(R.id.button_first);
-        Button button2 = findViewById(R.id.button_second);
-
-        button1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Home.this,Buy.class);
-                startActivity(intent);
-            }
-        });
-
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent1 = new Intent(Home.this,Sell.class);
-                startActivity(intent1);
-            }
-        });
     }
 
     @Override
@@ -53,22 +31,22 @@ public class Home extends AppCompatActivity {
 
         switch(id){
             case R.id.home :
-                Intent intent = new Intent(Home.this,Home.class);
+                Intent intent = new Intent(Sell.this,Home.class);
                 startActivity(intent);
                 break;
 
             case R.id.aboutus :
-                Intent intent1 = new Intent(Home.this,About.class);
+                Intent intent1 = new Intent(Sell.this,About.class);
                 startActivity(intent1);
                 break;
 
             case R.id.contactus :
-                Intent intent2 = new Intent(Home.this,Contact.class);
+                Intent intent2 = new Intent(Sell.this,Contact.class);
                 startActivity(intent2);
                 break;
 
             case R.id.logout :
-                Intent intent3 = new Intent(Home.this,Login.class);
+                Intent intent3 = new Intent(Sell.this,Login.class);
                 startActivity(intent3);
                 break;
         }
