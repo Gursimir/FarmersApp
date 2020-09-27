@@ -13,14 +13,11 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
-        <activity
-            android:name=".Buy" />
-        <activity
-            android:name=".Sell" />
-        <activity
-            android:name=".Contact" />
-        <activity
-            android:name=".About" />
+        <activity android:name=".SellFruitVegetable"></activity>
+        <activity android:name=".Buy" />
+        <activity android:name=".Sell" />
+        <activity android:name=".Contact" />
+        <activity android:name=".About" />
         <activity
             android:name=".Home"
             android:theme="@style/AppTheme.NoActionBar" />

@@ -1,16 +1,14 @@
 package com.example.splashscreen;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.Button;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 public class Contact extends AppCompatActivity {
 
@@ -26,14 +24,6 @@ public class Contact extends AppCompatActivity {
         button1 = findViewById(R.id.button_first);
         button2 = findViewById(R.id.button_second);
 
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(Intent.ACTION_CALL);
-                intent.setData(Uri.parse("7780931822"));
-                startActivity(intent);
-            }
-        });
     }
 
     @Override
