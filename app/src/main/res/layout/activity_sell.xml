@@ -43,7 +43,7 @@
             android:layout_height="154dp"
             android:text="@string/sell_quote"
             android:textColor="#ffff"
-            android:textSize="20sp" />
+            android:textSize="15sp" />
 
     </LinearLayout>
 
@@ -51,14 +51,15 @@
         android:layout_width="wrap_content"
         android:layout_height="250sp"
         android:layout_below="@+id/linear_layout"
-        android:layout_marginTop="150sp"
+        android:layout_marginTop="190sp"
         android:rowCount="1"
         android:columnCount="2">
 
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="20sp">
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_margin="10sp"
+            app:cardCornerRadius="10sp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -68,26 +69,29 @@
                     android:id="@+id/img1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/vegfru"/>
+                    android:src="@drawable/vegfru"
+                    tools:ignore="ContentDescription"
+                    android:layout_centerInParent="true"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/veg_fruit"
-                    android:textSize="17sp"
-                    android:textColor="#789f6f"
                     android:layout_below="@id/img1"
-                    android:layout_centerHorizontal="true"/>
+                    android:layout_marginTop="10sp"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/veg_fruit"
+                    android:textColor="#789f6f"
+                    android:textSize="17sp" />
 
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:layout_margin="20sp">
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_margin="10sp"
+            app:cardCornerRadius="10sp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -97,16 +101,19 @@
                     android:id="@+id/img2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/staple"/>
+                    android:src="@drawable/staple"
+                    tools:ignore="ContentDescription"
+                    android:layout_centerInParent="true"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/staples"
-                    android:textSize="17sp"
-                    android:textColor="#789f6f"
                     android:layout_below="@+id/img2"
-                    android:layout_centerHorizontal="true"/>
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/staples"
+                    android:layout_marginTop="10sp"
+                    android:textColor="#789f6f"
+                    android:textSize="17sp" />
 
             </RelativeLayout>
 
