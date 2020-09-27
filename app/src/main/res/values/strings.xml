@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SplashScreen</string>
+    <string name="app_name">Farmers Market</string>
     <string name="title_activity_login">Login</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
@@ -15,6 +15,10 @@
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
+    <string name="sell_quote_1">Sell with us</string>
+    <string name="sell_quote">Sell your products on the largest farmer marketplace in the country.Get insights from a dedicated account manager and team of agro experts</string>
+    <string name="veg_fruit">Fruits and Vegetables</string>
+    <string name="staples">Staples</string>
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>

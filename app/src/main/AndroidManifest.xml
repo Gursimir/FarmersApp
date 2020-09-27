@@ -14,20 +14,15 @@
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
         <activity
-            android:name=".Buy"
-            android:label="Buy"/>
+            android:name=".Buy" />
         <activity
-            android:name=".Sell"
-            android:label="Sell"/>
+            android:name=".Sell" />
         <activity
-            android:name=".Contact"
-            android:label="Contact Us" />
+            android:name=".Contact" />
         <activity
-            android:name=".About"
-            android:label="About Us" />
+            android:name=".About" />
         <activity
             android:name=".Home"
-            android:label="Home"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Login">
             <intent-filter>
