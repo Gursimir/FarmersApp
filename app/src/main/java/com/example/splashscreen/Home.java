@@ -63,7 +63,7 @@ public class Home extends AppCompatActivity {
                 break;
 
             case R.id.contactus :
-                Intent intent2 = new Intent(Home.this,Contact.class);
+                Intent intent2 = new Intent(Home.this, Contact.class);
                 startActivity(intent2);
                 break;
 

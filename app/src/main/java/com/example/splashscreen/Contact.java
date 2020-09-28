@@ -1,34 +1,46 @@
 package com.example.splashscreen;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.Button;
-
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.content.Intent;
+import android.net.Uri;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+
 public class Contact extends AppCompatActivity {
 
-    Button button1 , button2;
-
+    Button b1,b2;
+    Toolbar toolbar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_contact);
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        setContentView(R.layout.activity_contact1);
+
+        toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        button1 = findViewById(R.id.button_first);
-        button2 = findViewById(R.id.button_second);
+        b1 = findViewById(R.id.button_first);
+        b2 = findViewById(R.id.button_second);
 
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_CALL);
+                intent.setData(Uri.parse("tel:7780931822"));
+                startActivity(intent);
+
+            }
+        });
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_main,menu);
         return true;
     }
 
@@ -60,5 +72,4 @@ public class Contact extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
 }
