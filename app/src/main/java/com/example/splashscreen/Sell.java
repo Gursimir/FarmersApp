@@ -28,7 +28,7 @@ public class Sell extends AppCompatActivity {
         cardView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Sell.this,SellFruitVegetable.class);
+                Intent intent = new Intent(Sell.this,SellFruitsVegetables.class);
                 startActivity(intent);
             }
         });

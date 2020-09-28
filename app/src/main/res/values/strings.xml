@@ -19,12 +19,7 @@
     <string name="sell_quote">Sell your products on the largest farmer marketplace in the country.Get insights from a dedicated account manager and team of agro experts</string>
     <string name="veg_fruit">Fruits and Vegies</string>
     <string name="staples">Staples</string>
-    <string-array name="Fruits_Vegetables">
-        <item>Fruits</item>
-        <item>Vegetables</item>
-        <item>Herbs and Seasoning</item>
-        <item>Exotic Fruits and Vegetables</item>
-    </string-array>
+
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
