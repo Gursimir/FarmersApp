@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SellFruitsVegetables"
+    tools:context=".SellStaples"
     android:background="@drawable/bghome">
 
     <LinearLayout
         android:id="@+id/linear_layout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_marginTop="100dp"
         android:layout_marginStart="30sp"
         android:layout_marginLeft="30sp">
@@ -27,68 +27,68 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Fruits and Vegetables"
-            android:textSize="20sp"
+            android:text="Staples"
+            android:textSize="23sp"
             android:textColor="#789f6f"
-            tools:ignore="HardcodedText" />
+            tools:ignore="HardcodedText"
+            android:layout_marginLeft="13sp"
+            android:layout_marginStart="13sp" />
 
     </LinearLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/linear_layout"
-        android:layout_marginTop="50sp">
+        android:layout_below="@id/linear_layout">
 
         <Spinner
             android:id="@+id/spinner"
             android:layout_width="250sp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="80sp"
-            android:layout_centerHorizontal="true"/>
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80sp"/>
 
         <EditText
             android:id="@+id/et1"
             android:layout_width="250sp"
             android:layout_height="wrap_content"
-            android:hint="Product"
-            android:layout_below="@+id/spinner"
-            android:layout_centerHorizontal="true"
+            android:layout_below="@id/spinner"
             android:layout_marginTop="20sp"
+            android:hint="Product Name"
+            android:layout_centerHorizontal="true"
             tools:ignore="HardcodedText" />
 
         <EditText
             android:id="@+id/et2"
             android:layout_width="250sp"
             android:layout_height="wrap_content"
-            android:hint="Quantity"
-            android:layout_below="@+id/et1"
-            android:layout_centerHorizontal="true"
+            android:layout_below="@id/et1"
             android:layout_marginTop="20sp"
+            android:hint="Quantity"
+            android:layout_centerHorizontal="true"
             tools:ignore="HardcodedText" />
 
         <EditText
             android:id="@+id/et3"
             android:layout_width="250sp"
             android:layout_height="wrap_content"
-            android:hint="Price/Kg"
-            android:layout_below="@+id/et2"
-            android:layout_centerHorizontal="true"
+            android:layout_below="@id/et2"
             android:layout_marginTop="20sp"
+            android:hint="Price/Kg"
+            android:layout_centerHorizontal="true"
             tools:ignore="HardcodedText" />
 
         <Button
-            android:id="@+id/button"
             android:layout_width="150sp"
             android:layout_height="wrap_content"
-            android:text="Sell"
-            android:textSize="25sp"
-            android:textColor="#789f6f"
-            android:layout_below="@id/et3"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="100dp"
             android:background="@drawable/button"
-            tools:ignore="HardcodedText" />
+            android:text="SELL"
+            android:textColor="#789f6f"
+            android:textSize="26sp"
+            android:layout_below="@+id/et3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="100sp"/>
+
 
     </RelativeLayout>
 

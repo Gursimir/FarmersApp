@@ -20,6 +20,13 @@
     <string name="veg_fruit">Fruits and Vegies</string>
     <string name="staples">Staples</string>
 
+    <string-array name="Staple">
+        <item>Wheat,Soji,Soya</item>
+        <item>Rice and Rice Product</item>
+        <item>Pulses</item>
+        <item>Spices</item>
+        <item>Salt,Sugar and Jaggery</item>
+    </string-array>
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>

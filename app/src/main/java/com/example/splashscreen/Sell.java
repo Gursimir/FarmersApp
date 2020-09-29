@@ -33,6 +33,14 @@ public class Sell extends AppCompatActivity {
             }
         });
 
+        cardView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Sell.this,SellStaples.class);
+                startActivity(intent);
+            }
+        });
+
 
     }
 

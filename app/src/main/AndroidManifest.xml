@@ -13,9 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
-        <activity android:name=".SellFruitsVegetables"></activity>
+        <activity android:name=".SellStaples"></activity>
+        <activity android:name=".SellFruitsVegetables" />
         <activity android:name=".Contact" />
-        <activity android:name=".SellFruitVegetable" />
         <activity android:name=".Buy" />
         <activity android:name=".Sell" />
         <activity android:name=".About" />
